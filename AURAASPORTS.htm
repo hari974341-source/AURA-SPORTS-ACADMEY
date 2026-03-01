@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<meta charset="UTF-8">
+<title>Auraa Sports Academy</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
+        color: #0d47a1;
+    }
+
+    header {
+        background: #2196f3;
+        color: white;
+        text-align: center;
+        padding: 25px;
+    }
+
+    header h1 {
+        font-size: 42px;
+        margin: 0;
+        letter-spacing: 2px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    h2 {
+        color: #0d47a1;
+        border-left: 6px solid #2196f3;
+        padding-left: 10px;
+        margin-top: 40px;
+    }
+
+    .sports-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .sport-card {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        transition: transform 0.3s;
+    }
+
+    .sport-card:hover {
+        transform: translateY(-6px);
+    }
+
+    .sport-card img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    .sport-card h3 {
+        margin: 10px;
+        color: #1976d2;
+    }
+
+    .sport-card p {
+        margin: 10px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .form-box {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        margin-top: 30px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    label {
+        display: block;
+        margin-top: 15px;
+        font-weight: 600;
+        color: #0d47a1;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 6px;
+        border-radius: 6px;
+        border: 1px solid #90caf9;
+        font-size: 15px;
+    }
+
+    textarea {
+        resize: none;
+        height: 90px;
+    }
+
+    .radio-group {
+        margin-top: 8px;
+    }
+
+    .radio-group input {
+        width: auto;
+        margin-right: 6px;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 12px;
+        width: 100%;
+        background: #2196f3;
+        color: white;
+        font-size: 18px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #1565c0;
+    }
+
+    footer {
+        background: #0d47a1;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 50px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Auraa Sports Academy</h1>
+    <p>Build Fitness • Discipline • Champions</p>
+</header>
+
+<div class="container">
+
+    <h2>Our Sports & Monthly Fees</h2>
+
+    <div class="sports-grid">
+        <div class="sport-card">
+            <img src="https://th.bing.com/th/id/OIP.9aFmePx7r11UOBswNY5XuAHaEU?w=307&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+ alt="Swimming">
+            <h3>Swimming</h3>
+            <p>₹10,000 / month</p>
+        </div>
+
+        <div class="sport-card">
+            <img src="https://im.whatshot.in/img/2019/Jun/shutterstock-532591729-cropped-1560776824.jpg" alt="Badminton">
+            <h3>Badminton</h3>
+            <p>₹8,000 / month</p>
+        </div>
+
+        <div class="sport-card">
+            <img src="https://th.bing.com/th/id/OIP.I7r2Qg9YE_U2vLRU3HdKnwHaE7?w=283&h=188&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Volleyball">
+            <h3>Volleyball</h3>
+            <p>₹7,000 / month</p>
+        </div>
+
+        <div class="sport-card">
+            <img src="https://th.bing.com/th/id/OIP.FMAfY7s2-6DijSaRyMEY_gHaEK?w=285&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Kabaddi">
+            <h3>Kabaddi</h3>
+            <p>₹5,000 / month</p>
+        </div>
+
+        <div class="sport-card">
+            <img src="https://th.bing.com/th/id/OIP.9KheF38LRZM2_wwFaUReRwHaE8?w=331&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Cricket">
+            <h3>Cricket</h3>
+            <p>₹15,000 / month</p>
+        </div>
+    </div>
+
+    <h2>Admission Form</h2>
+    <div class="form-box">
+        <label>Student Name</label>
+        <input type="text" placeholder="Enter full name">
+
+        <label>Age</label>
+        <input type="number" placeholder="Enter age">
+
+        <label>Gender</label>
+        <div class="radio-group">
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+        </div>
+
+        <label>Select Sport</label>
+        <select>
+            <option>Swimming – ₹10,000</option>
+            <option>Badminton – ₹8,000</option>
+            <option>Volleyball – ₹7,000</option>
+            <option>Kabaddi – ₹5,000</option>
+            <option>Cricket – ₹15,000</option>
+        </select>
+
+        <button onclick="submitForm()">Apply Now</button>
+    </div>
+
+    <h2>Contact Us</h2>
+    <div class="form-box">
+        <label>Your Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Message</label>
+        <textarea placeholder="Write your message here"></textarea>
+
+        <button onclick="contactForm()">Send Message</button>
+    </div>
+
+</div>
+
+<footer>
+    📍 Auraa Sports Academy | 📞8123048643  | ✉️ auraasportsacademy@gmail.com
+</footer>
+
+<script>
+    function submitForm() {
+        alert("Admission form submitted successfully!");
+    }
+
+    function contactForm() {
+        alert("Thank you for contacting us. We will reply soon!");
+    }
+</script>
+
+</body>
+</html>
